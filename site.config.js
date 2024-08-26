@@ -17,6 +17,7 @@ const CONFIG = {
     title: "Hello World👋",
     description: "探索开发的乐趣，开发笔记和技术分享",
     keywords: ["博客", "开发", "notion", "kunlin", "twosx", "贰师兄", "blog"],
+    ogImage: "/og-image.jpeg",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
 

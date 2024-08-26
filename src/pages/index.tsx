@@ -28,6 +28,7 @@ const FeedPage: NextPageWithLayout = () => {
     keywords: CONFIG.blog.keywords,
     type: "website",
     url: CONFIG.link,
+    image: `${CONFIG.link}/${CONFIG.blog.ogImage}`,
   }
 
   return (
