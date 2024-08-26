@@ -50,6 +50,7 @@ const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
             pageUrl: `${CONFIG.link}/${slug}`,
             theme: scheme,
           }}
+          lang='zh-cn'
         />
       </StyledWrapper>
     </>

@@ -62,6 +62,11 @@ const useMermaidEffect = () => {
               element.innerHTML = svg
               return
             }
+
+            if (!(element.textContent || "").trim().length) return
+
+            if (element.querySelector("svg")) return
+
             const svg = await mermaid
               .render("mermaid" + i, element.textContent || "")
               .then((res) => res.svg)

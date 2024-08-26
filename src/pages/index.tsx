@@ -25,6 +25,7 @@ const FeedPage: NextPageWithLayout = () => {
   const meta = {
     title: CONFIG.blog.title,
     description: CONFIG.blog.description,
+    keywords: CONFIG.blog.keywords,
     type: "website",
     url: CONFIG.link,
   }
@@ -32,6 +33,8 @@ const FeedPage: NextPageWithLayout = () => {
   return (
     <>
       <MetaConfig {...meta} />
+      {/* 隐藏的 H1，优化 SEO */}
+      <h1 style={{ display: "none" }}>{CONFIG.blog.title}</h1>
       <Feed />
     </>
   )

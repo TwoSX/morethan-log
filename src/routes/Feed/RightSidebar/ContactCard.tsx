@@ -4,8 +4,9 @@ import {
   AiFillLinkedin,
   AiOutlineGithub,
   AiOutlineInstagram,
-  AiOutlineMail,
 } from "react-icons/ai"
+import { FaXTwitter } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -23,7 +24,7 @@ const ContactCard: React.FC = () => {
             target="_blank"
           >
             <AiOutlineGithub className="icon" />
-            <div className="name">github</div>
+            <div className="name">Github</div>
           </a>
         )}
         {CONFIG.profile.instagram && (
@@ -43,8 +44,8 @@ const ContactCard: React.FC = () => {
             target="_blank"
             css={{ overflow: "hidden" }}
           >
-            <AiOutlineMail className="icon" />
-            <div className="name">email</div>
+            <MdOutlineMailOutline className="icon" />
+            <div className="name">Email</div>
           </a>
         )}
         {CONFIG.profile.linkedin && (
@@ -55,6 +56,16 @@ const ContactCard: React.FC = () => {
           >
             <AiFillLinkedin className="icon" />
             <div className="name">linkedin</div>
+          </a>
+        )}
+        {CONFIG.profile.twitter && (
+          <a
+            href={`https://twitter.com/${CONFIG.profile.twitter}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaXTwitter className="icon" />
+            <div className="name">Twitter</div>
           </a>
         )}
       </StyledWrapper>
