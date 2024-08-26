@@ -11,7 +11,7 @@ const CONFIG = {
     instagram: "",
     twitter: "@Kunlin03",
   },
-  projects: null,
+  projects: [],
   // blog setting (required)
   blog: {
     title: "Hello World👋",
